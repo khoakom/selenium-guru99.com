@@ -1,0 +1,130 @@
+{
+  "id": "378e4bef-ea04-416b-a332-ec2403cf729a",
+  "version": "2.0",
+  "name": "06",
+  "url": "",
+  "tests": [{
+    "id": "41cbcac6-f57a-459c-9567-209cfd6d0470",
+    "name": "Untitled",
+    "commands": [{
+      "id": "258e528b-3b2c-45ca-87dc-764bec66ddac",
+      "comment": "Locating by ID - http://demo.guru99.com/test/facebook.html",
+      "command": "click",
+      "target": "id=email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4d18b44-934e-4860-b73c-16325fb6c9f1",
+      "comment": "Locating by Name - http://demo.guru99.com/test/newtours/",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "722b85af-d6a0-444f-a329-06948fc10dae",
+      "comment": "Locating by Name using Filters - http://demo.guru99.com/test/newtours/reservation.php",
+      "command": "click",
+      "target": "name=tripType value=oneway",
+      "targets": [
+        ["css=font:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='tripType'])[2]", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18e4bf85-6848-409e-be18-f2531db2b190",
+      "comment": "Locating by Link Text - http://demo.guru99.com/test/newtours/index.php",
+      "command": "click",
+      "target": "link=REGISTER",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "756f7326-f967-452e-8454-705c095d1494",
+      "comment": "Locating by CSS Selector - http://www.facebook.com/",
+      "command": "click",
+      "target": "css=input#email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87dd564d-2c0a-4b71-9191-539365290ca1",
+      "comment": "Locating by CSS Selector - Tag and ID - http://demo.guru99.com/test/facebook.html",
+      "command": "click",
+      "target": "css=input.inputtext",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f44e7a4e-86de-4072-a395-2be2a92dc4b1",
+      "comment": "Locating by CSS Selector - Tag and Class - http://demo.guru99.com/test/newtours/register.php",
+      "command": "click",
+      "target": "css=input[name=lastName]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8808d2d3-5fc3-4e1c-b343-6d6fae313878",
+      "comment": "Locating by CSS Selector - Tag and Attribute - http://demo.guru99.com/test/facebook.html",
+      "command": "click",
+      "target": "css=input.inputtext[tabindex='2']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfd89a7a-c5c3-4fd2-a247-688640b9217d",
+      "comment": "Locating by CSS Selector - tag, class, and attribute - http://demo.guru99.com/test/facebook.html",
+      "command": "click",
+      "target": "css=input.inputtext[tabindex='2']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "286d8c05-5eae-4df4-a9da-707a1f8db185",
+      "comment": "Locating by CSS Selector - inner text - http://demo.guru99.com/test/newtours/",
+      "command": "click",
+      "target": "css=font:contains('Boston')",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd05d156-86ea-4062-a450-df0e8d1088ad",
+      "comment": "Locating by DOM - getElementById - http://demo.guru99.com/test/facebook.html",
+      "command": "click",
+      "target": "document.getElementById('persist_box')",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ebde073-9546-46da-8fd3-6fa66c59f59b",
+      "comment": "Locating by DOM - getElementsByName - http://demo.guru99.com/test/newtours/reservation.php",
+      "command": "click",
+      "target": "document.getElementsByName(\"servClass\")[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a716e9d1-6395-45eb-abe0-a9e4b84a7dcb",
+      "comment": "Locating by DOM - dom:name - http://demo.guru99.com/test/newtours/",
+      "command": "click",
+      "target": "document.forms[\"home\"].elements[\"userName\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f43b3771-b9f3-4606-905a-1e441f9fbe28",
+      "comment": "Locating by DOM - dom:index - http://demo.guru99.com/test/newtours/register.php",
+      "command": "click",
+      "target": "document.forms[0].elements[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62c3be69-0a71-49fe-b131-c931fa5903f1",
+      "comment": "Locating by XPath - http://demo.guru99.com/test/newtours/index.php",
+      "command": "click",
+      "target": "/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/img",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c8593de8-ec12-47f7-ac2b-bcdc5daefc4d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["41cbcac6-f57a-459c-9567-209cfd6d0470"]
+  }],
+  "urls": [],
+  "plugins": []
+}
